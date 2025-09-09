@@ -9,7 +9,7 @@ export default function SliderFirst() {
         <div>
             <Swiper className="h-screen" modules={[Navigation]} navigation>
                 <SwiperSlide>
-                    <div className="h-screen bg-[url('/assets/firstsliderphoto.jpg')] flex items-center max-lg:justify-center lg:pl-80">
+                    <div className="h-screen bg-[url('/assets/firstsliderphoto.jpg')] flex flex-col items-center justify-center ">
                         <div className="flex flex-col items-center gap-8 lg:items-start">
                             <p className="text-xl text-white font-bold lg:text-2xl">SUMMER 2025</p>
                             <h2 className="text-4xl font-bold text-white text-center w-[15rem] lg:text-6xl lg:w-[40rem] lg:text-left">NEW COLLECTION</h2>
@@ -24,8 +24,17 @@ export default function SliderFirst() {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div className="h-screen flex items-center justify-center bg-gray-200">
-                        <h2 className="text-4xl font-bold">Another Slide</h2>
+                    <div className="h-screen bg-[url('/assets/firstsliderphoto.jpg')] flex flex-col items-center justify-center">
+                        <div className="flex flex-col items-center gap-8 lg:items-start">
+                            <p className="text-xl text-white font-bold lg:text-2xl">SUMMER 2025</p>
+                            <h2 className="text-4xl font-bold text-white text-center w-[15rem] lg:text-6xl lg:w-[40rem] lg:text-left">NEW COLLECTION</h2>
+                            <p className="text-white w-[15rem] text-center text-xl lg:text-left lg:w-[30rem] lg:text-2xl lg:font-semibold">
+                                We know how large objects will act, but things on a small scale.
+                            </p>
+                            <button className="w-60 h-20 bg-green-500 text-white font-bold text-2xl rounded hover:bg-green-600 transition">
+                                SHOP NOW
+                            </button>
+                        </div>
                     </div>
                 </SwiperSlide>
             </Swiper>
