@@ -16,18 +16,18 @@ export default function Header() {
                     <div className="flex flex-row gap-4">
                         <div className="flex flex-row gap-2">
                             <Phone />
-                            <p className="mb-0">+90 123 456 78 99</p>
+                            <p>+90 123 456 78 99</p>
                         </div>
                         <div className="flex flex-row gap-2">
                             <Mail />
-                            <p className="mb-0">dilaragultas@gmail.com</p>
+                            <p>dilaragultas@gmail.com</p>
                         </div>
                     </div>
                     <div>
-                        <p className="mb-0">Follow Us and get a chance to win %80 off</p>
+                        <p>Follow Us and get a chance to win %80 off</p>
                     </div>
                     <div className="flex flex-row gap-3">
-                        <p className="mb-0">Follow Us : </p>
+                        <p>Follow Us : </p>
                         <Instagram />
                         <YoutubeIcon />
                         <Facebook />
@@ -37,7 +37,7 @@ export default function Header() {
             </div>
 
             <div className="flex flex-row justify-between px-4 my-4 w-[98vw]">
-                <p className="mb-0 font-bold text-2xl text-[#252b42]">Bandage</p>
+                <p className="font-bold text-2xl text-[#252b42]">Bandage</p>
                 <nav className="max-lg:hidden flex flex-row gap-4">
                     <a href="" className="text-[#737373]">Home</a>
                     <div className="relative" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
