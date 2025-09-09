@@ -1,4 +1,5 @@
 import BestSellerCard from "../components/BestSellerCards";
+import C2A from "../components/C2A";
 import EditorsPick from "../components/EditorsPick";
 import SliderFirst from "../components/SliderFirst";
 import SliderSecond from "../components/SliderSecond";
@@ -12,6 +13,7 @@ export default function HomePage() {
             <EditorsPick />
             <BestSellerCard />
             <SliderSecond />
+            <C2A />
         </>
     )
 }
