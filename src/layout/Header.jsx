@@ -38,42 +38,42 @@ export default function Header() {
 
             <div className="flex flex-row justify-between px-4 my-4 w-[98vw]">
                 <p className="font-bold text-2xl text-[#252b42]">Bandage</p>
-                <nav className="max-lg:hidden flex flex-row gap-4">
-                    <a href="" className="text-[#737373]">Home</a>
+                <nav className="max-lg:hidden flex flex-row gap-4 text-2xl font-semibold text-[#737373]">
+                    <a href="">Home</a>
                     <div className="relative" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
-                        <button>Shop</button>
+                        <button>Shop ▼</button>
                         {open && (
-                            <div className="absolute flex flex-row gap-40 z-50 bg-white">
-                                <div>
-                                    <h7 className="text-[#252b42] font-bold">Kadın</h7>
-                                    <ul className="p-0">
-                                        <li><a href="" className="">Bags</a></li>
-                                        <li><a href="">Belts</a></li>
-                                        <li><a href="">Cosmetics</a></li>
-                                        <li><a href="">Hats</a></li>
+                            <div className="absolute flex flex-row gap-40 z-50 bg-white shadow-md">
+                                <div className="flex flex-col py-6 px-4 gap-5">
+                                    <h7 className="text-[#252b42] font-semibold">Kadın</h7>
+                                    <ul className="flex flex-col gap-3">
+                                        <li><a href="" className="font-semibold">Bags</a></li>
+                                        <li><a href="" className="font-semibold">Belts</a></li>
+                                        <li><a href="" className="font-semibold">Cosmetics</a></li>
+                                        <li><a href="" className="font-semibold">Hats</a></li>
                                     </ul>
                                 </div>
-                                <div>
-                                    <h7 className="text-[#252b42] font-bold">Erkek</h7>
-                                    <ul className="p-0">
-                                        <li><a href="">Bags</a></li>
-                                        <li><a href="">Belts</a></li>
-                                        <li><a href="">Cosmetics</a></li>
-                                        <li><a href="">Hats</a></li>
+                                <div className="flex flex-col py-6 px-4 gap-5">
+                                    <h7 className="text-[#252b42] font-semibold">Erkek</h7>
+                                    <ul className="flex flex-col gap-3">
+                                        <li><a href="" className="font-semibold">Bags</a></li>
+                                        <li><a href="" className="font-semibold">Belts</a></li>
+                                        <li><a href="" className="font-semibold">Cosmetics</a></li>
+                                        <li><a href="" className="font-semibold">Hats</a></li>
                                     </ul>
                                 </div>
                             </div>
                         )}
                     </div>
                     <a href="">About</a>
-                    <a href="">Blog</a>
-                    <a href="">Contact</a>
-                    <a href="">Pages</a>
+                    <a href="" >Blog</a>
+                    <a href="" >Contact</a>
+                    <a href="" >Pages</a>
                 </nav>
                 <div className="flex flex-row gap-4 items-center">
                     <div className="flex flex-row gap-1">
                         <a href=""><User className="text-[#252b42] lg:text-[#23a6f0]" /></a>
-                        <a className="max-lg:hidden" href="">Login/Register</a>
+                        <a className="max-lg:hidden lg:text-[#23a6f0]" href="">Login/Register</a>
                     </div>
                     <a href=""><Search className="text-[#252b42] lg:text-[#23a6f0]" /></a>
                     <a href=""><ShoppingBasketIcon className="text-[#252b42] lg:text-[#23a6f0]" /></a>
