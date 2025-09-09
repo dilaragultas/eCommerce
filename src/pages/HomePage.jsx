@@ -3,6 +3,7 @@ import C2A from "../components/C2A";
 import EditorsPick from "../components/EditorsPick";
 import SliderFirst from "../components/SliderFirst";
 import SliderSecond from "../components/SliderSecond";
+import Footer from "../layout/Footer";
 import Header from "../layout/Header";
 
 export default function HomePage() {
@@ -14,6 +15,7 @@ export default function HomePage() {
             <BestSellerCard />
             <SliderSecond />
             <C2A />
+            <Footer />
         </>
     )
 }
