@@ -10,22 +10,22 @@ export default function FeaturedPost() {
         "/assets/feature3.jpg",
     ]
     return (
-        <div className="flex flex-col gap-12 items-center">
+        <div className="flex flex-col gap-12 items-center py-10">
             <div className="flex flex-col items-center gap-6 ">
                 <p className="font-semibold text-xl text-[#23a6f0]">Practice Advice</p>
-                <h3 className="font-bold text-5xl text-[#252b42] w-[15rem] text-center">Featured Products</h3>
-                <p className="text-light font-semibold text-[#737373] w-[20rem] text-center">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+                <h3 className="font-bold text-5xl text-[#252b42] w-[15rem] text-center lg:w-[30rem]">Featured Products</h3>
+                <p className="text-light font-semibold text-[#737373] w-[20rem] text-center lg:w-[30rem]">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
             </div>
-            <div className="flex flex-col shadow-md">
+            <div className="flex flex-col lg:flex-row gap-12">
                 {post.map((elm, index) => {
                     return (
-                        <div key={index} className={`${index >= 3 ? "hidden lg:block" : "lg:hidden"} flex flex-col items-center gap-4`}>
+                        <div key={index} className={`${index >= 3 ? "hidden lg:block" : "lg:hidden"} flex flex-col items-center gap-4 shadow-md`}>
                             <div className="flex relative w-80 h-80">
                                 <img className="object-cover w-full h-full" src={elm} alt="" />
                                 <p className="absolute text-white font-bold bg-red-500 px-4 py-2 rounded mt-6 ml-6">NEW</p>
 
                             </div>
-                            <div className="flex flex-col w-80 h-80 items-start px-6 gap-4">
+                            <div className="flex flex-col w-80 h-80 items-start px-6 gap-4 lg:mt-4">
                                 <div className="flex flex-row gap-4 text-left">
                                     <p className="text-[#23a6f0] font-semibold">Google</p>
                                     <p className="text-[#737373] font-semibold">Trending</p>
